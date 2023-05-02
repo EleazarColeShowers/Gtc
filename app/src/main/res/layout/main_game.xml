@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fraglevel_container"
+        android:name="com.app.guessthecolor.fragmentLevel1"
+        android:layout_width="413dp"
+        android:layout_height="568dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottiegamepage"
+        android:layout_width="162dp"
+        android:layout_height="163dp"
+        android:layout_marginStart="234dp"
+        android:layout_marginTop="537dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/friend"
+        tools:ignore="ImageContrastCheck" />
+
+    <Button
+        android:id="@+id/okay"
+        android:layout_width="190dp"
+        android:layout_height="54dp"
+        android:text="Okay!"
+        android:backgroundTint="@color/material_dynamic_neutral70"
+        android:textColor="@color/black"
+        app:fontFamily="@font/bangers"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/lottiegamepage"
+        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fraglevel_container"
+        app:layout_constraintVertical_bias="0.77" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/type_answer"
+        android:layout_width="194dp"
+        android:layout_height="54dp"
+        android:background="@color/material_dynamic_neutral70"
+        android:letterSpacing="0.2"
+        android:textColor="@color/black"
+        android:inputType="textCapCharacters"
+        app:layout_constraintBottom_toTopOf="@+id/okay"
+        app:layout_constraintEnd_toStartOf="@+id/lottiegamepage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fraglevel_container"
+        tools:ignore="TextContrastCheck"
+
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

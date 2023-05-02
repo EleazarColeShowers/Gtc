@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Guess The Color</string>
+    <string name="yellow_triangle">What color is the triangle?</string>
+    <string name="white_circle">What color is the circle?</string>
+    <string name="blue_rectangle">What color is the rectangle?</string>
+    <string name="red_square">What color is the square?</string>
+    <string name="green_rhombus">What color is the rhombus?</string>
+</resources>

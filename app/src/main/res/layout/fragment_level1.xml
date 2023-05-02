@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/yellow_triangle"
+        android:layout_width="411dp"
+        android:layout_height="415dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.655"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.737"
+        app:srcCompat="@drawable/yellowtriangle"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/yellowtriangletxt"
+        android:layout_width="358dp"
+        android:layout_height="102dp"
+        android:text="@string/yellow_triangle"
+        app:autoSizeMaxTextSize="500dp"
+        app:autoSizeMinTextSize="35dp"
+        app:autoSizeTextType="uniform"
+        app:fontFamily="@font/bangers"
+        app:layout_constraintBottom_toTopOf="@+id/yellow_triangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.827" />
+</androidx.constraintlayout.widget.ConstraintLayout>
